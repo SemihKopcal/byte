@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BYTE</title>
+<meta name="description" content="BYTE measures things about AI tools. Short, sourced, no hype.">
+<style>
+  :root{
+    --bg:#07070c; --surface:#11111c; --line:#24243a;
+    --fg:#f2f2f7; --dim:#8e8ea8; --mint:#4ade80; --violet:#8b8bff;
+    color-scheme:dark;
+  }
+  @media (prefers-color-scheme:light){
+    :root:not([data-theme="dark"]){
+      --bg:#fafafc; --surface:#fff; --line:#e3e3ed;
+      --fg:#12121a; --dim:#5a5a70; --mint:#15a34a; --violet:#5b5bd6;
+      color-scheme:light;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+  .wrap{max-width:640px;margin:0 auto;padding:72px 16px 96px}
+  .mark{display:flex;align-items:center;gap:14px}
+  .mark svg{width:56px;height:56px;flex:none}
+  h1{font-size:34px;font-weight:800;letter-spacing:-.03em;margin:0}
+  .tag{color:var(--dim);margin:6px 0 0;font-size:15px}
+  p{color:var(--dim);max-width:58ch}
+  .fg{color:var(--fg)}
+  h2{font-size:17px;margin:44px 0 10px;letter-spacing:-.01em}
+  ul{color:var(--dim);padding-left:20px;margin:10px 0}
+  li{margin:6px 0}
+  a{color:var(--violet)}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding-top:18px;
+    font-size:14px;color:var(--dim)}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;
+    background:var(--surface);padding:2px 6px;border-radius:5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mark">
+    <!-- BYTE: CRT head, blinking cursor. Same geometry as the videos. -->
+    <svg viewBox="0 0 240 200" aria-label="BYTE">
+      <rect x="4" y="4" width="232" height="184" rx="48" fill="#1a1e28"
+            stroke="#2e3444" stroke-width="5"/>
+      <rect x="26" y="24" width="188" height="144" rx="32" fill="#090c12"/>
+      <rect x="105" y="68" width="30" height="56" rx="6" fill="#4ade80">
+        <animate attributeName="opacity" values="1;1;0;0;1"
+                 dur="1.6s" repeatCount="indefinite"/>
+      </rect>
+    </svg>
+    <div>
+      <h1>BYTE</h1>
+      <p class="tag">AI tools, measured.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:28px">
+    BYTE is a short-form video channel about AI tools: what they cost, what
+    they actually do, and how the numbers compare. Every figure shown on
+    screen comes from a source named in the video description, measured on
+    the date shown.
+  </p>
+
+  <h2>What this is</h2>
+  <ul>
+    <li><span class="fg">No affiliate links.</span> Nothing here earns a commission.</li>
+    <li><span class="fg">No sponsorships.</span> Tools are not paying to appear.</li>
+    <li><span class="fg">Sources on every video.</span> If a number has no source, it doesn't go in.</li>
+    <li><span class="fg">Synthetic narration.</span> The voice and visuals are generated; BYTE is a program, not a person, and does not claim expertise.</li>
+  </ul>
+
+  <h2>About this page</h2>
+  <p>
+    This site is the home page of the private tool that publishes those
+    videos. The tool runs on a schedule, renders the video, and uploads it to
+    one YouTube channel &mdash; its owner's. It has no users, no sign-up and
+    no public interface. See the <a href="privacy.html">privacy policy</a>.
+  </p>
+
+  <footer>
+    Contact: <code>semihkopcal1@gmail.com</code> &nbsp;·&nbsp;
+    <a href="privacy.html">Privacy</a>
+  </footer>
+
+</div>
+</body>
+</html>
